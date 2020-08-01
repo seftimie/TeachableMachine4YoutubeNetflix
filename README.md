@@ -7,11 +7,11 @@ I spent one quality hour with [my kido (sir Karl)](https://www.youtube.com/chann
 
 * We've done some testing on Teachable Machine's playground to validate that our model was working;
 
-* Export & use the Model: We choose to upload out model to Google Cloud Platform and get a nice shareable link; Then we grab the Teachable Machine's JS code and tweaked a little.
+* Export & use the Model: We choose to upload out model to Google Cloud Platform and get a nice shareable link; Then we grabbed the Teachable Machine's JS code and tweaked it a little.
 
 * With Chrome, goto: https://www.youtube.com/watch?v=hFZFjoX2cGg
 
-* Open Chrome Developer Tools -> Console and Inject the JS code (copy + paste it) in this order:
+* Open Chrome Developer Tools -> Console and Inject the JS code (copy + paste) in this order:
 
 ```javascript
 var script = document.createElement('script');
