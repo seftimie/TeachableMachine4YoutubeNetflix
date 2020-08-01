@@ -1,17 +1,17 @@
 # TeachableMachine4YoutubeNetflix
-Spent one quality hour with my kido (sir Karl) training a ML model to play/pause videos from distance on Youtube, Netflix or HBO in a hacky way. We been using Teachable Machine (from Google AI Experiments), some JS and Chrome Developer Tools. The kid enjoyed a lot the output.
+I spent one quality hour with [my kido (sir Karl)](https://www.youtube.com/channel/UCHV6pF1KjgCJB4M__4ZYISg) training a ML model to play/pause videos from distance on Youtube, Netflix or HBO in a hacky way. We been using [Teachable Machine (from Google AI Experiments)](https://teachablemachine.withgoogle.com/), some JS and Chrome Developer Tools. The kid enjoyed a lot the output.
 
 ### Solution (step by step):
 
-* I introduced sir K to Teachable Machine creating an image model with two classes: play / nothing. Play: we record 150 images with out hand rising o showing the hand;  Nothing: we record 150 images with us, out home without showing our hands;
+* I introduced sir K to Teachable Machine creating an image model with two classes: "play" and "nothing". On "Play" we recorded 150 images with our hands rising or showing 🤚 to the webcam. On "Nothing" we recorded 150 images with us, our home, dog, cat, food with no hands rising or showing 🤚. 
 
-* We've done some testing on Teachable Machine's playground to validad that our model is currently working;
+* We've done some testing on Teachable Machine's playground to validate that our model was working;
 
-* Export & use the Model: We choose to upload out model to  GCP and get a nice shareable link; Then we grab the JS code and modify a little.
+* Export & use the Model: We choose to upload out model to Google Cloud Platform and get a nice shareable link; Then we grab the Teachable Machine's JS code and tweaked a little.
 
 * With Chrome, goto: https://www.youtube.com/watch?v=hFZFjoX2cGg
 
-* Open Chrome Developer Tools -> Console and inject (copy + paste) in this order, all this code:
+* Open Chrome Developer Tools -> Console and Inject the JS code (copy + paste it) in this order:
 
 ```javascript
 var script = document.createElement('script');
@@ -102,7 +102,7 @@ async function predict()
 init();
 ```
 
-* At this point Chrome will ask you, to use your webcam. Just allow it!
+* At this point Chrome will ask you for permissions to use your webcam. Just allow it!
 
 
 * When the webcam will see  a hand rising will stop or play the video (aka push spacebar)
@@ -110,11 +110,11 @@ init();
 
 ### Todos:
 
-* Not the best code out there, but hey it's just a nice demo not an end production;
-* maybe some day, someone (not me) could write an Chrome Extension when you can specify your url custom model and some gesture (when class "x" detected "press space");
+* Not the best code out there... but hey it's just a nice demo;
+* maybe someday, someone (not me) could write an Chrome Extension when you can specify the url custom model and some gestures (eg: when class "x" probability 1.00 then "press space");
 
 
 Enjoy it !
 
 
-PD: Don't use this for gym sessions. It's a disaster, Karl's mommy just try it out and was a big fail 😐
+PD: Don't use this for gym sessions. It's a disaster, [Karl's mommy](https://www.linkedin.com/in/cornelia-nicoleta-radulescu-6b3b7b16a/) just try it out and was a big fail 😐
