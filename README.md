@@ -1,13 +1,13 @@
 # TeachableMachine4YoutubeNetflix
-I spent one quality hour with [my kido (sir Karl)](https://www.youtube.com/channel/UCHV6pF1KjgCJB4M__4ZYISg) training a ML model to play/pause videos from distance on Youtube, Netflix or HBO in a hacky way. We been using [Teachable Machine (from Google AI Experiments)](https://teachablemachine.withgoogle.com/), some JS and Chrome Developer Tools. The kid enjoyed a lot the output.
+I spent one quality hour with [my kido (sir Karl)](https://www.youtube.com/channel/UCHV6pF1KjgCJB4M__4ZYISg) training a ML model to play/pause videos from distance on Youtube, Netflix or HBO in a hacky way. We've been using [Teachable Machine (from Google AI Experiments)](https://teachablemachine.withgoogle.com/), some Javascript and Chrome Developer Tools. The kid enjoyed a lot the output.
 
 ### Solution (step by step):
 
-* I introduced sir K to Teachable Machine creating an image model with two classes: "play" and "nothing". On "Play" we recorded 150 images with our hands rising or showing 🤚 to the webcam. On "Nothing" we recorded 150 images with us, our home, dog, cat, food with no hands rising or showing 🤚. 
+* I introduced sir K to Teachable Machine creating an image model with two classes: "Play" and "Nothing". On "Play" we recorded 150 images with our hands rising or showing 🤚 to the webcam. On "Nothing" we recorded 150 images with us, our home, dog, cat, food with no hands rising or showing 🤚. 
 
 * We've done some testing on Teachable Machine's playground to validate that our model was working;
 
-* Export & use the Model: We choose to upload out model to Google Cloud Platform and get a nice shareable link; Then we grabbed the Teachable Machine's JS code and tweaked it a little.
+* Export & use the Model: We chose to upload our model to Google Cloud Platform and get a nice shareable link; Then we grabbed the Teachable Machine's JS code and tweaked it a little.
 
 * With Chrome, goto: https://www.youtube.com/watch?v=hFZFjoX2cGg
 
@@ -111,10 +111,10 @@ init();
 ### Todos:
 
 * Not the best code out there... but hey it's just a nice demo;
-* maybe someday, someone (not me) could write an Chrome Extension when you can specify the url custom model and some gestures (eg: when class "x" probability 1.00 then "press space");
+* maybe someday, someone (not me) could write an Chrome Extension where you can specify your custom model url and some gestures (eg: when class "x" probability 1.00 then "press space");
 
 
 Enjoy it !
 
 
-PD: Don't use this for gym sessions. It's a disaster, [Karl's mommy](https://www.linkedin.com/in/cornelia-nicoleta-radulescu-6b3b7b16a/) just try it out and was a big fail 😐
+PD: Don't use this for gym sessions 💪💪💪 - it's a disaster !!!! [Karl's mommy](https://www.linkedin.com/in/cornelia-nicoleta-radulescu-6b3b7b16a/) just tried it out and was a big fail 😐
