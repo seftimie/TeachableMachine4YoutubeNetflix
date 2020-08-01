@@ -1,6 +1,12 @@
 # TeachableMachine4YoutubeNetflix
 I spent one quality hour with [my kido (sir Karl)](https://www.youtube.com/channel/UCHV6pF1KjgCJB4M__4ZYISg) training a ML model to play/pause videos from distance on Youtube, Netflix or HBO in a hacky way. We've been using [Teachable Machine (from Google AI Experiments)](https://teachablemachine.withgoogle.com/), some Javascript and Chrome Developer Tools. The kid enjoyed a lot the output.
 
+![Neo, Matrix stopping videos](neo.jpg?raw=true "Neo, from Matrix stopping videos on Youtube/Netflix/Hbo/Vimeo etc")
+
+[Full demo (video) of TeachableMachine4YoutubeNetflix](https://www.youtube.com/watch?v=iYZbfsHiqXk)
+
+
+
 ### Solution (step by step):
 
 * I introduced sir K to Teachable Machine creating an image model with two classes: "Play" and "Nothing". On "Play" we recorded 150 images with our hands rising or showing 🤚 to the webcam. On "Nothing" we recorded 150 images with us, our home, dog, cat, food with no hands rising or showing 🤚. 
